@@ -14,6 +14,7 @@ class HomeController extends Controller
 
     public function index(Citizens $user)
     {
+		// return redirect()->action('HomezakatController@index');
     	$data['total'] = $user->count();
     	$data['male'] = $user->where('sex_id', 1)->count();
     	$data['female'] = $user->where('sex_id', 2)->count();

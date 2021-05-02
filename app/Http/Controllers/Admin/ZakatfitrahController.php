@@ -34,7 +34,7 @@ class ZakatfitrahController extends Controller
         $data['page_title'] = $this->title;
     	$data['ajax'] = route($this->uri.'.data');
     	$data['create'] = route($this->uri.'.create');
-        $data['jeniszakatfitrah'] = Jeniszakatfitrah::all();
+        // $data['jeniszakatfitrah'] = Jeniszakatfitrah::all();
         // return session('birth_date');
     	return view($this->folder.'.index',$data);
     }
@@ -79,6 +79,9 @@ class ZakatfitrahController extends Controller
             // ->editColumn('id','<input type="checkbox" class="checkbox" name="id[]" value="{{$id}}"/>')
                 ->editColumn('sex_id', function ($index) {
                     return $index->sex->name;
+                })
+                ->editColumn('jeniszakat_id', function ($index) {
+                    return $index->jeniszakatfitrah->name;
                 })
 
 	            ->addColumn('action', function ($index) {

@@ -34,6 +34,6 @@ class Zakatfitrah extends Model
 
     public function jeniszakatfitrah()
     {
-    	return $this->belongsTo(Jeniszakatfitrah::class);
+    	return $this->belongsTo(Jeniszakatfitrah::class, 'jeniszakat_id');
     }
 }
