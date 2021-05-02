@@ -26,11 +26,11 @@
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
-        <li>
+        {{-- <li>
           <a href="{{url('admin/home')}}">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
-        </li>
+        </li> --}}
         <li>
           <a href="{{url('admin/homezakat')}}">
             <i class="fa fa-line-chart"></i> <span>Dashboard Zakat Fitrah</span>
@@ -46,11 +46,11 @@
             <i class="fa fa-line-chart"></i> <span>Dashboard Fidiyah</span>
           </a>
         </li>
-        <li>
+        {{-- <li>
           <a href="{{url('admin/citizens')}}">
             <i class="fa fa-users"></i> <span>Data Penduduk</span>
           </a>
-        </li>
+        </li> --}}
         <li>
           <a href="{{url('admin/zakatfitrah')}}">
             <i class="fa fa-money"></i> <span>Zakat Fitrah</span>
