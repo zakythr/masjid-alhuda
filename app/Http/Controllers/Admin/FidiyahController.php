@@ -68,6 +68,9 @@ class FidiyahController extends Controller
                 ->editColumn('sex_id', function ($index) {
                     return $index->sex->name;
                 })
+                ->editColumn('tanggalfidiyah', function ($index) {
+                    return date('d/m/Y', strtotime($index->tanggalfidiyah));
+                })
 	            ->addColumn('action', function ($index) {
 	                $tag = (Auth::user()->id == 1) ? Form::open(array("url" => route($this->uri.'.destroy',$index->id), "method" => "DELETE")) : '';
 	                $tag .= "<a href=".route($this->uri.'.edit',$index->id)." class='btn btn-primary btn-xs'>Edit</a>";
