@@ -28,9 +28,10 @@
 		          <th>Nama</th>
 		          <th>Jenis Kelamin</th>
 		          <th>Jenis Zakat</th>
-		          <th>Jumlah Beras (kg)</th>
-				  <th>Jumlah Uang</th>
-				  <th>Tanggal Zakat Fitrah</th>
+				  <th>Jumlah Orang</th>
+		          <th>Beras (kg)</th>
+				  <th>Uang</th>
+				  <th>Tanggal Zakat</th>
 				  <th>Alamat</th>
 		          <!-- <th>Created At</th> -->
 		          <th></th>
@@ -121,6 +122,7 @@
 	            { data: 'nama', searchable: true, orderable: false},
 	            { data: 'sex_id', searchable: false, orderable: false},
 	            { data: 'jeniszakat_id', searchable: false, orderable: false},
+				{ data: 'jmlorang', searchable: false, orderable: false},
 	            { data: 'jumlahberas', searchable: false, orderable: false},
 				{ data: 'jumlahuang', searchable: false, orderable: false, render: $.fn.dataTable.render.number(',', '.', 2, '')},
 				{ data: 'tanggalfitrah', searchable: false, orderable: false},

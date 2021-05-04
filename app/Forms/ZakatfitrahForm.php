@@ -47,6 +47,10 @@ class ZakatfitrahForm extends Form
                     'class' => 'form-class select2'
                 ]
             ])
+            ->add('jmlorang', 'text', [
+                'label' => 'Untuk Berapa Orang',
+                'attr' => ['data-validation' => 'required']
+            ])
             ->add('jumlahberas', 'text', [
                 'label' => 'Jumlah Beras',
                 'attr' => ['data-validation' => 'required']

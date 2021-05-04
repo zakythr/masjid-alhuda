@@ -65,7 +65,7 @@ class ZakatfitrahController extends Controller
     public function data(Request $request)
     {
     	if ($request->ajax()) {
-    		$data = $this->table->select(['id','nama','sex_id','jeniszakat_id','jumlahberas','jumlahuang','tanggalfitrah','alamat','created_at'])->orderBy('id')->orderBy('id', 'desc');
+    		$data = $this->table->select(['id','nama','sex_id','jeniszakat_id','jmlorang','jumlahberas','jumlahuang','tanggalfitrah','alamat','created_at'])->orderBy('id')->orderBy('id', 'desc');
             if ($request->session()->has('sex_id')) {
                 $data = $data->where('sex_id', $request->session()->get('sex_id'));
             }

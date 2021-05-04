@@ -9,7 +9,7 @@ class Zakatfitrah extends Model
 {
     protected $table = 'zakatfitrah';
     protected $fillable = [
-    	'nama', 'sex_id', 'jeniszakat_id', 'jumlahberas', 
+    	'nama', 'sex_id', 'jeniszakat_id', 'jmlorang', 'jumlahberas', 
         'jumlahuang', 'tanggalfitrah', 'alamat', 'created_by', 'updated_by'
     ];
 
